@@ -16,6 +16,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Hello from Abercrombie & Fitch!</h1>
+      <h2>Products</h2>
       {products.map((product, index) => (
         <div key={index}>
           <h1>{product.name}</h1>

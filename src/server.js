@@ -8,7 +8,9 @@ const app = new Koa();
 const router = new Router();
 
 router.get("/", async (ctx) => {
-  ctx.body = {};
+  ctx.body = {
+    products: [],
+  };
 });
 
 app
