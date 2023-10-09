@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello from Abercrombie & Fitch!</h1>
+      <h1>Abercrombie & Fitch</h1>
       <h2>Products</h2>
     </div>
   );
