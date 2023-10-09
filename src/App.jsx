@@ -1,28 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function App() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setProducts(data.products);
-      });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="App">
       <h1>Hello from Abercrombie & Fitch!</h1>
       <h2>Products</h2>
-      {products.map((product, index) => (
-        <div key={index}>
-          <h1>{product.name}</h1>
-          <h2>{product.price}</h2>
-        </div>
-      ))}
     </div>
   );
 }
